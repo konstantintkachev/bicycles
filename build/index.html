@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,6 +10,14 @@
   </head>
   <body class="page">
     <header class="page-header">
+      <div class="page-header__container">
+        <a class="page-header__logo" href="#">
+          <svg></svg>
+        </a>
+        <button class="page-header__btn" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+      </div>
       <div class="main-nav">
         <ul class="main-nav__list">
           <li class="main-nav__item">
@@ -27,6 +35,54 @@
         </ul>
       </div>
     </header>
-    <main></main>
+
+    <main class="main">
+      <h1 class="visually-hidden">Магазин велосипедов Moon</h1>
+      <section class="main-offer">
+        <div class="main-offer__container">
+          <h2 class="main-offer__title">Мы продаем велосипеды</h2>
+          <p class="main-offer__text">
+            Наш магазин отбирает только самое лучшие велосипеды для продажи
+          </p>
+        </div>
+        <div class="main-offer__container-form">
+          <p>Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
+          <form class="form-feedback" action="https://echo.htmlacademy.ru" method="post">
+            <label class="visually-hidden" for="name">Ваше имя</label>
+            <input class="form-feedback__input-name" type="text" name="name" id="name" placeholder="Введите Ваше Имя">
+            <label class="visualle-hidden" for="tel">Ваш телефон</label>
+            <input class="form-feedback__input-tel" name="tel" id="tel" type="tel" placeholder="Введите Ваш номер телефона">
+            <button class="form-feedback__btn" type="submit">
+              Подобрать велосипед мечты
+            </button>
+          </form>
+        </div>
+      </section>
+
+      <section class="facts">
+        <h2 class="visualle-hidden">Факты о нас</h2>
+        <ol class="facts__list">
+          <li>Самый широкий выбор велосипедов!</li>
+          <li>Доставка велосипедов по всей России!</li>
+          <li>Большой выбор крутых аксессуаров!</li>
+          <li>Профессиональные консультации!</li>
+        </ol>
+      </section>
+
+      <section class="bicycle-selection">
+        <h2 class="visualle-hidden">Виды велосипедов</h2>
+        <ul class="bicycle-selection__link">
+          <li class="bicycle-selection__item">
+            <a href="#">Дорожный велосипед</a>
+          </li>
+          <li class="bicycle-selection__item">
+            <a href="#">Горный велосипед</a>
+          </li>
+          <li class="bicycle-selection__item">
+            <a href="#">Детский велосипед</a>
+          </li>
+        </ul>
+      </section>
+    </main>
   </body>
 </html>
