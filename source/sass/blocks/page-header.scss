@@ -1,0 +1,22 @@
+.page-header__nav {
+  margin-top: auto;
+  margin-left: auto;
+  position: absolute;
+  z-index: 10;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  padding-top: 21px;
+  width: 880px;
+  min-height: 338px;
+}
+
+.page-header__container {
+  order: 1;
+  margin-top: 239px;
+}
+
+.page-header__btn {
+  display: none;
+}

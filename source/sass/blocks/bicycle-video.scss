@@ -1,0 +1,63 @@
+.bicycle-video {
+  padding-top: 122px;
+  position: relative;
+  background-color: $black-3;
+  color: $basic-white;
+  height: 583px;
+}
+
+.bicycle-video__container {
+  width: 100%;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+}
+
+.bicycle-video__title {
+  margin-top: 0;
+  margin-bottom: 18px;
+  padding-right: 10px;
+  color: $basic-white;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 30px;
+  letter-spacing: -0.5%;
+  text-align: center;
+}
+
+.bicycle-video__text {
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 13px;
+  width: 340px;
+  line-height: 28px;
+  opacity: 0.7;
+  margin-bottom: 56px;
+}
+
+.bicycle-video__img {
+  position: relative;
+  width: max-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bicycle-video__img img {
+  display: block;
+  border-style: none;
+  max-width: 100%;
+  height: auto;
+}
+
+.bicycle-video__btn {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background-color: transparent;
+  border: 0;
+}

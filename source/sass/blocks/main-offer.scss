@@ -1,0 +1,52 @@
+.main-offer {
+  min-height: 825px;
+  background-color: $black-1;
+  background-image: url(../img/bg-desktop.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  color: $basic-white;
+  margin-bottom: 100px;
+}
+
+.main-offer__wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 320px;
+  width: 880px;
+}
+
+.main-offer__container {
+  margin-top: 12px;
+  width: 393px;
+  box-sizing: border-box;
+}
+
+.main-offer__title {
+  font-size: 46px;
+  line-height: 64px;
+  letter-spacing: -0.5%;
+  margin-bottom: 25px;
+}
+
+.main-offer__text {
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: -0.5%;
+  opacity: 0.8;
+  color: $basic-white;
+}
+
+.main-offer__container-form {
+  width: 327px;
+}
+
+.main-offer__container-form p {
+  margin-top: 0;
+  margin-bottom: 18px;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 28px;
+  text-align: center;
+}
