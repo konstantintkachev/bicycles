@@ -5,6 +5,11 @@
   max-width: 1440px;
   margin-left: auto;
   margin-right: auto;
+  @media (max-width: $max-tablet) {
+    padding-top: 40px;
+    margin-bottom: 0;
+    padding-bottom: 31px;
+  }
 }
 
 .facts__title {
@@ -16,6 +21,11 @@
   text-align: center;
   font-weight: 600;
   margin-bottom: 50px;
+  @media (max-width: $max-tablet) {
+    margin-bottom: 30px;
+    font-size: 24px;
+    line-height: 41px;
+  }
 }
 
 .facts__list {
@@ -30,6 +40,10 @@
   margin: 0 auto;
   padding-left: 8.2%;
   padding-right: 8.2%;
+  @media (max-width: $max-tablet) {
+    padding-right: 11.5%;
+    padding-left: 11.5%;
+  }
 }
 
 .facts__list li {
@@ -39,6 +53,11 @@
   counter-increment: counter;
   padding-top: 52px;
   padding-bottom: 15px;
+  @media (max-width: $max-tablet) {
+    padding-bottom: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 .facts__list li::before {

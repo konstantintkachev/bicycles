@@ -3,7 +3,11 @@
   position: relative;
   background-color: $black-3;
   color: $basic-white;
-  height: 583px;
+  height: 706px;
+  @media (max-width: $max-tablet) {
+    padding-top: 70px;
+    height: 413px;
+  }
 }
 
 .bicycle-video__container {
@@ -24,6 +28,11 @@
   line-height: 30px;
   letter-spacing: -0.5%;
   text-align: center;
+  @media (max-width: $max-tablet) {
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: -0.5%;
+  }
 }
 
 .bicycle-video__text {
@@ -35,11 +44,19 @@
   line-height: 28px;
   opacity: 0.7;
   margin-bottom: 56px;
+  @media (max-width: $max-tablet) {
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: -0.5%;
+    text-align: center;
+    padding-left: 0;
+    width: 429px;
+  }
 }
 
 .bicycle-video__img {
   position: relative;
-  width: max-content;
+  width: auto;
   margin-left: auto;
   margin-right: auto;
 }
@@ -49,6 +66,12 @@
   border-style: none;
   max-width: 100%;
   height: auto;
+  margin: 0 auto;
+  @media (max-width: $max-tablet) {
+    width: 503px;
+    height: 282px;
+    object-fit: cover;
+  }
 }
 
 .bicycle-video__btn {
@@ -60,4 +83,13 @@
   transform: translate(-50%, -50%);
   background-color: transparent;
   border: 0;
+  @media (max-width: $max-tablet) {
+  }
+}
+
+.bicycle-video__btn svg {
+  @media (max-width: $max-tablet) {
+    height: 90px;
+    width: 90px;
+  }
 }

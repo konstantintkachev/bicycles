@@ -17,3 +17,136 @@
   color: $basic-white;
   opacity: 0.7;
 }
+
+.main-nav--opened,
+.main-nav--no-js {
+  @media (max-width: $max-tablet) {
+    min-height: 100vh;
+    background-color: $basic-white;
+  }
+}
+
+.main-nav--no-js {
+  @media (max-width: $max-tablet) {
+    position: static;
+    transform: none;
+    padding-bottom: 25px;
+    min-height: auto;
+  }
+}
+
+.main-nav__header {
+  order: 1;
+  margin-top: auto;
+
+  @media (max-width: $max-tablet) {
+    display: flex;
+    align-items: flex-end;
+    padding-left: 21px;
+  }
+
+  @media (max-width: $max-mobile) {
+    padding-left: 17px;
+  }
+}
+
+.main-nav__logo {
+  @media (max-width: $max-tablet) {
+    padding-bottom: 5px;
+  }
+}
+
+.main-nav__logo--opened,
+.main-nav__logo--no-js {
+  @media (max-width: $max-tablet) {
+    display: none;
+  }
+}
+
+.main-nav__btn--closed {
+  @media (max-width: $max-tablet) {
+    background-color: $basic-turquoise;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: darken($basic-turquoise, 5);
+  }
+
+  &:active {
+    background-color: darken($basic-turquoise, 20);
+  }
+
+  &::before {
+    @media (max-width: $max-tablet) {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 22px;
+      height: 1px;
+      background-color: $black-1;
+      border-radius: 1px;
+      box-shadow: 0 6px 0 0 $black-1, 0 -6px 0 0 $black-1;
+    }
+  }
+}
+
+.main-nav__btn--opened {
+  background-color: transparent;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 2px;
+    width: 31px;
+    height: 1px;
+    background-color: rgba($grey-3, 0.2);
+  }
+
+  &::before {
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+
+  &::after {
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+
+  &:hover,
+  &:focus {
+    &::before,
+    &::after {
+      background-color: $grey-3;
+    }
+  }
+
+  &:active {
+    &::before,
+    &::after {
+      background-color: rgba($grey-3, 0.5);
+    }
+  }
+}
+
+.main-nav__btn--no-js {
+  @media (max-width: $max-tablet) {
+    display: none;
+  }
+}
+
+.main-nav__site-nav--closed {
+  @media (max-width: $max-tablet) {
+    display: none;
+  }
+}
+
+.main-nav__site-nav--opened,
+.main-nav__site-nav--no-js {
+  @media (max-width: $max-tablet) {
+    display: block;
+  }
+}
