@@ -50,6 +50,14 @@
       background-image: url("../img/bg-tablet@2x.jpg");
     }
   }
+  @media (max-width: $max-mobile) {
+    min-height: 390px;
+    background-image: url("../img/bg-mobile.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/bg-mobile@2x.jpg");
+    }
+  }
 }
 
 .main-offer__title {
@@ -82,6 +90,13 @@
     margin-right: auto;
     width: 435px;
   }
+  @media (max-width: $max-mobile) {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+    width: auto;
+  }
 }
 
 .main-offer__container-form {
@@ -90,6 +105,10 @@
     margin-left: auto;
     margin-right: auto;
     padding-top: 70px;
+    width: 321px;
+  }
+  @media (max-width: $max-mobile) {
+    width: 288px;
   }
 }
 
@@ -103,5 +122,9 @@
   @media (max-width: $max-tablet) {
     margin-bottom: 30px;
     font-size: 18px;
+    width: auto;
+  }
+  @media (max-width: $max-mobile) {
+    width: 288px;
   }
 }

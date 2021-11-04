@@ -1,25 +1,6 @@
 .page__footer {
   padding-bottom: 96px;
-  width: 100%;
-  max-width: 1440px;
-  display: grid;
-  grid-template-columns: repeat(2, max-content);
-  grid-column-gap: 90px;
-  grid-row-gap: 20px;
-  justify-content: center;
-  padding-top: 39px;
-  padding-right: 16px;
-}
-
-.contacts__link {
-  color: $black-1;
-  opacity: 0.5;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 22px;
-}
-
-.contacts__link svg {
-  margin-right: 15px;
-  fill: transparent;
+  @media (max-width: $max-tablet) {
+    padding-bottom: 53px;
+  }
 }

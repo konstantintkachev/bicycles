@@ -27,6 +27,9 @@
     padding-left: 21px;
     margin-top: 0;
   }
+  @media (max-width: $max-mobile) {
+    padding-left: 17px;
+  }
 }
 
 .page-header__btn {

@@ -1,6 +1,13 @@
 .form-feedback {
   display: grid;
   grid-row-gap: 20px;
+  width: auto;
+  @media (max-width: $max-tablet) {
+    width: auto;
+  }
+  @media (max-width: $max-mobile) {
+    width: auto;
+  }
 }
 
 .form-feedback input {

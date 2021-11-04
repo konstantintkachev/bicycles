@@ -82,7 +82,7 @@
 
     <main class="page__main">
       <h1 class="visually-hidden">Магазин велосипедов Moon</h1>
-      <section class="main-offer">
+      <section class="main-offer container">
         <div class="main-offer__wrapper">
           <div class="main-offer__container">
             <h2 class="main-offer__title">Мы продаем велосипеды</h2>
@@ -119,7 +119,7 @@
         </div>
       </section>
 
-      <section class="facts">
+      <section class="facts container container">
         <h2 class="facts__title">Несколько фактов о нас</h2>
         <ol class="facts__list">
           <li>Самый широкий выбор велосипедов!</li>
@@ -129,7 +129,7 @@
         </ol>
       </section>
 
-      <section class="bicycle-selection">
+      <section class="bicycle-selection container">
         <h2 class="bicycle-selection__title">Виды велосипедов</h2>
         <ul class="bicycle-selection__list">
           <li class="bicycle-selection__item">
@@ -205,7 +205,7 @@
       </section>
 
       <section class="bicycle-video">
-        <div class="bicycle-video__container">
+        <div class="bicycle-video__container container">
           <h2 class="bicycle-video__title">Видео про велосипеды</h2>
           <p class="bicycle-video__text">
             В этом видео мы подробно расскажем про особенности выбора велосипеда
@@ -253,7 +253,7 @@
         </div>
       </section>
 
-      <section class="map-address">
+      <section class="map-address container">
         <h2 class="map-address__title">Как нас найти?</h2>
         <p class="map-address__text">
           Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19
@@ -271,28 +271,24 @@
       </section>
     </main>
 
-    <footer class="page__footer">
-      <div class="contacts__container">
-        <a
-          class="contacts__link contacts__link--mail"
-          href="mailto:puteshestviemechta@gmail.ru"
-        >
-          <svg role="img" width="26" height="20">
-            <use xlink:href="img/sprite.svg#mail-icon"></use>
-          </svg>
-          <span>puteshestviemechta@gmail.ru</span>
-        </a>
-      </div>
-      <div class="contacts__container">
-        <a
-          class="contacts__link contacts__link--tel"
-          href="tel:+7 (499) -784-684-46"
-        >
-          <svg role="img" width="21.5" height="22.62">
-            <use xlink:href="img/sprite.svg#phone-icon"></use>
-          </svg>
-          <span>+7 (499) -784-684-46</span>
-        </a>
+    <footer class="page__footer container">
+      <div class="contacts__wrapper">
+        <div class="contacts__link contacts__link--mail">
+          <a class="" href="mailto:puteshestviemechta@gmail.ru">
+            <svg role="img" width="26" height="20">
+              <use xlink:href="img/sprite.svg#mail-icon"></use>
+            </svg>
+            <span>puteshestviemechta@gmail.ru</span>
+          </a>
+        </div>
+        <div class="contacts__link contacts__link--tel">
+          <a href="tel:+7 (499) -784-684-46">
+            <svg role="img" width="21.5" height="22.62">
+              <use xlink:href="img/sprite.svg#phone-icon"></use>
+            </svg>
+            <span>+7 (499) -784-684-46</span>
+          </a>
+        </div>
       </div>
     </footer>
   </body>

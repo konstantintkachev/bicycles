@@ -1,21 +1,24 @@
 .bicycle-video {
-  padding-top: 122px;
   position: relative;
   background-color: $black-3;
   color: $basic-white;
-  height: 706px;
+  min-height: 706px;
+  padding-top: 122px;
+  padding-bottom: 20px;
   @media (max-width: $max-tablet) {
     padding-top: 70px;
-    height: 413px;
+    min-height: 413px;
+  }
+  @media (max-width: $max-mobile) {
+    min-height: 384px;
+    padding-top: 60px;
   }
 }
 
 .bicycle-video__container {
-  width: 100%;
-  max-width: 1440px;
-  margin-left: auto;
-  margin-right: auto;
-  box-sizing: border-box;
+  @media (max-width: $max-mobile) {
+    padding-top: 24px;
+  }
 }
 
 .bicycle-video__title {
@@ -32,6 +35,9 @@
     font-size: 24px;
     line-height: 30px;
     letter-spacing: -0.5%;
+  }
+  @media (max-width: $max-mobile) {
+    padding-right: 0;
   }
 }
 
@@ -52,13 +58,19 @@
     padding-left: 0;
     width: 429px;
   }
+  @media (max-width: $max-mobile) {
+    width: auto;
+    padding-left: 0;
+    margin-bottom: 65px;
+  }
 }
 
 .bicycle-video__img {
   position: relative;
-  width: auto;
+  width: max-content;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: -118px;
 }
 
 .bicycle-video__img img {
@@ -72,6 +84,10 @@
     height: 282px;
     object-fit: cover;
   }
+  @media (max-width: $max-mobile) {
+    height: 162px;
+    width: 288px;
+  }
 }
 
 .bicycle-video__btn {
@@ -83,13 +99,15 @@
   transform: translate(-50%, -50%);
   background-color: transparent;
   border: 0;
-  @media (max-width: $max-tablet) {
-  }
 }
 
 .bicycle-video__btn svg {
   @media (max-width: $max-tablet) {
     height: 90px;
     width: 90px;
+  }
+  @media (max-width: $max-mobile) {
+    height: 65px;
+    width: 65px;
   }
 }
