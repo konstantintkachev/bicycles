@@ -1,15 +1,28 @@
-'use strict';
-var pageHeader = document.querySelector('.page-header');
-var headerToggle = document.querySelector('.page-header__toggle');
+const pageHeaderNav = document.querySelector('.page-header__nav');
+const pageHeaderLogo = pageHeaderNav.querySelector('.page-header__logo');
+const pageHeaderBtn = pageHeaderNav.querySelector('.page-header__btn');
+const mainNav = pageHeaderNav.querySelector('.main-nav');
 
-pageHeader.classList.remove('page-header--nojs');
+const elements = {
+  'page-header__nav': pageHeaderNav,
+  'page-header__logo': pageHeaderLogo,
+  'page-header__btn': pageHeaderBtn,
+  'main-nav': mainNav,
+};
 
-headerToggle.addEventListener('click', function () {
-  if (pageHeader.classList.contains('page-header--closed')) {
-    pageHeader.classList.remove('page-header--closed');
-    pageHeader.classList.add('page-header--opened');
-  } else {
-    pageHeader.classList.add('page-header--closed');
-    pageHeader.classList.remove('page-header--opened');
+Object.keys(elements).forEach((element) => {
+  if (elements[element] !== undefined) {
+    elements[element].classList.remove(`${element}--no-js`);
+    elements[element].classList.add(`${element}--closed`);
   }
-});
+})
+
+const menu = () => {
+  Object.keys(elements).forEach((element) => {
+    if (elements[element] !== undefined) {
+      elements[element].classList.toggle(`${element}--opened`);
+      elements[element].classList.toggle(`${element}--closed`);
+    }
+  })
+};
+pageHeaderBtn.addEventListener('click', menu);

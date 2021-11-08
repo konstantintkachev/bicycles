@@ -10,9 +10,9 @@
   </head>
   <body class="page">
     <header class="page-header">
-      <nav class="page-header__nav main-nav--closed">
+      <nav class="page-header__nav page-header--no-js">
         <div class="page-header__container">
-          <a class="page-header__logo main-nav__logo--closed" href="#">
+          <a class="page-header__logo page-header__logo--no-js" href="#">
             <svg width="68" height="21" viewBox="0 0 68 21" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M13.3636 0V20.0455H10.0705V5.82273L8.97273 7.20682L6.825 9.975L6.72954 10.0705L6.58636 9.975L4.43864 7.20682L3.34091 5.775V20.0455H0V0H3.34091L6.72954 4.29545L10.0705 0H13.3636Z" fill="#0AD9C6"></path>
               <path d="M8.30444 10.0704L8.20898 9.97498L8.30444 10.0704Z" fill="#0AD9C6"></path>
@@ -24,11 +24,11 @@
               <rect x="37" y="3" width="6" height="4" fill="#0AD9C6"></rect>
             </svg>
           </a>
-          <button class="page-header__btn main-nav__btn--closed" type="button">
+          <button class="page-header__btn page-header__btn--no-js" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
         </div>
-        <div class="main-nav main-nav__site-nav--closed">
+        <div class="main-nav main-nav__site-nav--no-js">
           <ul class="main-nav__list">
             <li class="main-nav__item">
               <a href="#">О нас</a>
@@ -49,7 +49,7 @@
 
     <main class="page__main">
       <h1 class="visually-hidden">Магазин велосипедов Moon</h1>
-      <section class="main-offer container">
+      <section class="main-offer">
         <div class="main-offer__wrapper">
           <div class="main-offer__container">
             <h2 class="main-offer__title">Мы продаем велосипеды</h2>
@@ -63,7 +63,7 @@
               <label class="visually-hidden" for="name">Ваше имя</label>
               <input type="text" name="name" id="name" placeholder="Введите Ваше Имя">
               <label class="visually-hidden" for="tel">Ваш телефон</label>
-              <input name="tel" id="tel" type="tel" placeholder="Введите Ваш номер телефона">
+              <input name="tel" id="tel" type="number" placeholder="Введите Ваш номер телефона">
               <button class="form-feedback__btn" type="submit">
                 Подобрать велосипед мечты
               </button>
@@ -172,14 +172,15 @@
           </a>
         </div>
         <div class="contacts__link contacts__link--tel">
-          <a href="tel:+7 (499) -784-684-46">
+          <a href="tel:+7(499)-784-684-46">
             <svg role="img" width="21.5" height="22.62">
               <use xlink:href="img/sprite.svg#phone-icon"></use>
             </svg>
-            <span>+7 (499) -784-684-46</span>
+            <span>+7(499)-784-684-46</span>
           </a>
         </div>
       </div>
     </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>
