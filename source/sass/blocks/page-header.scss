@@ -120,15 +120,15 @@
   }
 }
 
-.page-header--opened,
-.page-header--no-js {
+.page-header__nav--opened,
+.page-header__nav--no-js {
   @media (max-width: $max-tablet) {
     min-height: 100vh;
     background-color: $basic-white;
   }
 }
 
-.page-header--no-js {
+.page-header__nav--no-js {
   @media (max-width: $max-tablet) {
     position: static;
     transform: none;

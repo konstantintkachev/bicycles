@@ -72,14 +72,14 @@
   }
 }
 
-.main-nav__site-nav--closed {
+.main-nav--closed {
   @media (max-width: $max-tablet) {
     display: none;
   }
 }
 
-.main-nav__site-nav--opened,
-.main-nav__site-nav--no-js {
+.main-nav--opened,
+.main-nav--no-js {
   @media (max-width: $max-tablet) {
     display: block;
   }

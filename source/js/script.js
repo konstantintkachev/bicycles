@@ -1,7 +1,9 @@
+'use strict';
+
 const pageHeaderNav = document.querySelector('.page-header__nav');
 const pageHeaderLogo = pageHeaderNav.querySelector('.page-header__logo');
 const pageHeaderBtn = pageHeaderNav.querySelector('.page-header__btn');
-const mainNav = pageHeaderNav.querySelector('.main-nav');
+const mainNav = document.querySelector('.main-nav');
 
 const elements = {
   'page-header__nav': pageHeaderNav,
@@ -11,18 +13,15 @@ const elements = {
 };
 
 Object.keys(elements).forEach((element) => {
-  if (elements[element] !== undefined) {
-    elements[element].classList.remove(`${element}--no-js`);
-    elements[element].classList.add(`${element}--closed`);
-  }
+  elements[element].classList.remove(`${element}--no-js`);
+  elements[element].classList.add(`${element}--closed`);
 })
 
 const menu = () => {
   Object.keys(elements).forEach((element) => {
-    if (elements[element] !== undefined) {
-      elements[element].classList.toggle(`${element}--opened`);
-      elements[element].classList.toggle(`${element}--closed`);
-    }
+    elements[element].classList.toggle(`${element}--opened`);
+    elements[element].classList.toggle(`${element}--closed`);
   })
-};
+}
+
 pageHeaderBtn.addEventListener('click', menu);
