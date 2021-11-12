@@ -53,7 +53,7 @@
   }
 }
 
-.bicycle-selection--mountain {
+.bicycle-selection__wrapper--mountain {
   padding-top: 39px;
   @media (max-width: $max-tablet) {
     padding-top: 0;
@@ -104,13 +104,13 @@
   }
 }
 
-.bicycle-selection--mountain img {
+.bicycle-selection__wrapper--mountain img {
   @media (max-width: $max-tablet) {
     object-position: 50% 40%;
   }
 }
 
-.bicycle-selection--kids img {
+.bicycle-selection__wrapper--kids img {
   @media (max-width: $max-tablet) {
     object-position: 50% bottom;
     margin-top: 50px;
@@ -141,7 +141,7 @@
   }
 }
 
-.bicycle-selection--mountain::before {
+.bicycle-selection__wrapper--mountain::before {
   content: "";
   position: absolute;
   z-index: 1;
@@ -156,7 +156,7 @@
   }
 }
 
-.bicycle-selection--mountain::after {
+.bicycle-selection__wrapper--mountain::after {
   content: "";
   position: absolute;
   z-index: 1;
@@ -171,7 +171,7 @@
   }
 }
 
-.bicycle-selection--kids::before {
+.bicycle-selection__wrapper--kids::before {
   content: "";
   position: absolute;
   z-index: 1;
