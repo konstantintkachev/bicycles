@@ -10,6 +10,7 @@
   padding-top: 21px;
   width: 880px;
   min-height: 338px;
+
   @media (max-width: $max-tablet) {
     display: block;
     padding-top: 0;
@@ -21,12 +22,14 @@
 .page-header__container {
   order: 1;
   margin-top: 239px;
+
   @media (max-width: $max-tablet) {
     display: flex;
     align-items: flex-end;
     padding-left: 21px;
     margin-top: 0;
   }
+
   @media (max-width: $max-mobile) {
     padding-left: 17px;
   }
@@ -50,6 +53,7 @@
   @media (max-width: $max-tablet) {
     background-color: $basic-turquoise;
   }
+
   &:hover,
   &:focus {
     background-color: rgba($basic-turquoise, 5);
@@ -139,7 +143,7 @@
 
 .page-header__logo {
   @media (max-width: $max-tablet) {
-    padding-bottom: 5px;
+    padding-bottom: 0;
   }
 }
 

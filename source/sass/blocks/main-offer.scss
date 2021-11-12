@@ -1,12 +1,13 @@
 .main-offer {
   min-height: 825px;
   background-color: $black-1;
-  background-image: url(../img/bg-desktop.jpg);
+  background-image: url("../img/bg-desktop.jpg");
   background-repeat: no-repeat;
   background-position: center;
   color: $basic-white;
   margin-bottom: 100px;
   background-size: 1440px 825px;
+
   @media (max-width: $max-tablet) {
     margin-bottom: 30px;
     padding-top: 0;
@@ -25,6 +26,7 @@
   margin-left: auto;
   padding-top: 320px;
   width: 880px;
+
   @media (max-width: $max-tablet) {
     display: block;
     width: auto;
@@ -36,6 +38,7 @@
   margin-top: 12px;
   width: 393px;
   box-sizing: border-box;
+
   @media (max-width: $max-tablet) {
     width: auto;
     min-height: 340px;
@@ -51,6 +54,7 @@
       background-image: url("../img/bg-tablet@2x.jpg");
     }
   }
+
   @media (max-width: $max-mobile) {
     min-height: 390px;
     background-image: url("../img/bg-mobile.jpg");
@@ -65,7 +69,9 @@
   font-size: 46px;
   line-height: 64px;
   letter-spacing: -0.5%;
-  margin-bottom: 25px;
+  margin-bottom: 23px;
+  padding-top: 0;
+
   @media (max-width: $max-tablet) {
     font-size: 30px;
     line-height: 42px;
@@ -73,6 +79,11 @@
     text-align: center;
     margin-top: 0;
     padding-top: 135px;
+    margin-bottom: 20px;
+  }
+
+  @media (max-width: $max-mobile) {
+    padding-top: 122px;
   }
 }
 
@@ -82,6 +93,7 @@
   letter-spacing: -0.5%;
   opacity: 0.8;
   color: $basic-white;
+
   @media (max-width: $max-tablet) {
     font-size: 18px;
     line-height: 32px;
@@ -91,6 +103,7 @@
     margin-right: auto;
     width: 435px;
   }
+
   @media (max-width: $max-mobile) {
     margin-left: auto;
     margin-right: auto;
@@ -102,12 +115,14 @@
 
 .main-offer__container-form {
   width: 327px;
+
   @media (max-width: $max-tablet) {
     margin-left: auto;
     margin-right: auto;
     padding-top: 70px;
     width: 321px;
   }
+
   @media (max-width: $max-mobile) {
     width: 288px;
   }
@@ -115,17 +130,20 @@
 
 .main-offer__container-form p {
   margin-top: 0;
-  margin-bottom: 18px;
+  margin-bottom: 21px;
   font-weight: 600;
   font-size: 17px;
   line-height: 28px;
   text-align: center;
+
   @media (max-width: $max-tablet) {
     margin-bottom: 30px;
     font-size: 18px;
     width: 324px;
   }
+
   @media (max-width: $max-mobile) {
     width: 288px;
+    margin-bottom: 21px;
   }
 }

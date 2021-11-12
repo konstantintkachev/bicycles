@@ -10,6 +10,7 @@
   color: rgba($basic-white, 0.7);
   line-height: 32px;
   letter-spacing: 0.5%;
+
   @media (max-width: $max-tablet) {
     display: block;
     font-weight: normal;
@@ -30,6 +31,7 @@
     padding: 17px;
     background-color: $grey-7;
   }
+
   &::after {
     @media (max-width: $max-tablet) {
       content: "";
@@ -43,6 +45,7 @@
       transform: rotate(-45deg) translateY(-50%);
     }
   }
+
   &:last-child {
     @media (max-width: $max-tablet) {
       margin-bottom: 0;
@@ -53,15 +56,18 @@
 .main-nav__item a {
   display: block;
   color: inherit;
+
   &:hover,
   &:focus {
     color: $basic-white;
     opacity: 1;
+
     @media (max-width: $max-tablet) {
       color: $black-1;
       font-weight: 600;
     }
   }
+
   &:active {
     color: rgba($basic-white, 0.5);
 

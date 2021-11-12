@@ -4,11 +4,16 @@
   margin-left: auto;
   margin-right: auto;
   padding-top: 150px;
-  padding-bottom: 150px;
+  padding-bottom: 147px;
   display: block;
+
   @media (max-width: $max-tablet) {
     padding-bottom: 70px;
     padding-top: 50px;
+  }
+
+  @media (max-width: $max-mobile) {
+    padding-bottom: 13px;
   }
 }
 
@@ -21,10 +26,16 @@
   color: $black-2;
   text-align: center;
   margin-bottom: 20px;
+  padding-left: 7px;
+
   @media (max-width: $max-tablet) {
     font-size: 24px;
     line-height: 41px;
     margin-bottom: 30px;
+  }
+
+  @media (max-width: $max-mobile) {
+    padding-left: 0;
   }
 }
 
@@ -41,6 +52,7 @@
   padding-top: 32px;
   box-sizing: border-box;
   position: relative;
+
   @media (max-width: $max-tablet) {
     padding-top: 0;
     display: flex;
@@ -51,10 +63,16 @@
     width: auto;
     justify-content: center;
   }
+
+  @media (max-width: $max-mobile) {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
 }
 
 .bicycle-selection__wrapper--mountain {
   padding-top: 39px;
+
   @media (max-width: $max-tablet) {
     padding-top: 0;
   }
@@ -65,10 +83,15 @@
     padding-left: 25px;
     padding-right: 25px;
   }
+
+  @media (max-width: $max-mobile) {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 .bicycle-selection__item h3 {
-  margin-top: 15px;
+  margin-top: 22px;
   margin-bottom: 0;
   font-weight: 600;
   font-size: 22px;
@@ -76,8 +99,13 @@
   text-align: center;
   letter-spacing: -0.5px;
   color: $black-1;
+
   @media (max-width: $max-tablet) {
     margin-top: 20px;
+  }
+
+  @media (max-width: $max-mobile) {
+    margin-bottom: 42px;
   }
 }
 
@@ -91,16 +119,21 @@
   border-radius: 10px;
   position: relative;
   z-index: 0;
+
   @media (max-width: $max-tablet) {
     height: 300px;
     width: 270px;
+    object-position: 50% bottom;
     object-fit: cover;
   }
 }
 
 .bicycle-selection__wrapper--city img {
+  margin-top: 10px;
+
   @media (max-width: $max-tablet) {
     object-position: 50% 60%;
+    margin-top: 0;
   }
 }
 
@@ -115,13 +148,17 @@
     object-position: 50% bottom;
     margin-top: 50px;
   }
+
+  @media (max-width: $max-mobile) {
+    margin-top: 0;
+  }
 }
 
 .bicycle-selection__wrapper--city::before {
   content: "";
   position: absolute;
-  top: 267px;
-  left: -57px;
+  top: 249px;
+  left: -59px;
   transform: translateY(-50%);
   border: 27px solid $basic-turquoise;
   border-radius: 50%;
@@ -129,15 +166,19 @@
   height: 180px;
   box-sizing: border-box;
   z-index: 0;
+
   @media (max-width: $max-tablet) {
     top: unset;
     bottom: -28px;
     left: -37px;
-    -webkit-transform: none;
     transform: none;
     border-width: 18px;
     width: 127px;
     height: 127px;
+  }
+
+  @media (max-width: $max-mobile) {
+    left: -25px;
   }
 }
 
@@ -151,6 +192,7 @@
   box-sizing: border-box;
   top: 21px;
   left: -6%;
+
   @media (max-width: $max-tablet) {
     display: none;
   }
@@ -164,8 +206,9 @@
   width: 47px;
   height: 47px;
   box-sizing: border-box;
-  right: -5.5%;
-  bottom: -22px;
+  right: -6.5%;
+  bottom: -24px;
+
   @media (max-width: $max-tablet) {
     display: none;
   }
@@ -182,11 +225,16 @@
   width: 95px;
   height: 95px;
   box-sizing: border-box;
+
   @media (max-width: $max-tablet) {
     top: -20px;
     right: -25px;
     border-width: 13px;
     width: 68px;
     height: 68px;
+  }
+
+  @media (max-width: $max-mobile) {
+    right: -13px;
   }
 }

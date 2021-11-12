@@ -3,12 +3,14 @@
   background-color: $black-3;
   color: $basic-white;
   min-height: 706px;
-  padding-top: 122px;
+  padding-top: 125px;
   padding-bottom: 20px;
+
   @media (max-width: $max-tablet) {
     padding-top: 70px;
     min-height: 413px;
   }
+
   @media (max-width: $max-mobile) {
     min-height: 384px;
     padding-top: 60px;
@@ -22,23 +24,28 @@
 }
 
 .bicycle-video__title {
-  margin-top: 0;
+  margin-top: -2px;
   margin-bottom: 18px;
   padding-right: 10px;
+  padding-left: 11px;
   color: $basic-white;
   font-weight: 600;
   font-size: 30px;
   line-height: 30px;
   letter-spacing: -0.5%;
   text-align: center;
+
   @media (max-width: $max-tablet) {
     font-size: 24px;
     line-height: 30px;
     letter-spacing: -0.5%;
+    margin-bottom: 22px;
   }
+
   @media (max-width: $max-mobile) {
     padding-right: 0;
-    margin-bottom: 25px;
+    margin-bottom: 23px;
+    padding-left: 0;
   }
 }
 
@@ -51,6 +58,7 @@
   line-height: 28px;
   opacity: 0.7;
   margin-bottom: 56px;
+
   @media (max-width: $max-tablet) {
     font-size: 16px;
     line-height: 28px;
@@ -58,11 +66,14 @@
     text-align: center;
     padding-left: 0;
     width: 429px;
+    margin-bottom: 40px;
   }
+
   @media (max-width: $max-mobile) {
     width: auto;
-    padding-left: 0;
-    margin-bottom: 65px;
+    padding-left: 6px;
+    padding-right: 6px;
+    margin-bottom: 53px;
   }
 }
 
@@ -80,11 +91,13 @@
   max-width: 100%;
   height: auto;
   margin: 0 auto;
+
   @media (max-width: $max-tablet) {
     width: 503px;
     height: 282px;
     object-fit: cover;
   }
+
   @media (max-width: $max-mobile) {
     height: 162px;
     width: 288px;
@@ -96,7 +109,6 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   background-color: transparent;
   border: 0;
@@ -107,6 +119,7 @@
     height: 90px;
     width: 90px;
   }
+
   @media (max-width: $max-mobile) {
     height: 65px;
     width: 65px;
