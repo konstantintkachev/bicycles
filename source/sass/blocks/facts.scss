@@ -17,7 +17,7 @@
   }
 }
 
-.facts__title {
+.facts h2 {
   font-size: 30px;
   line-height: 30px;
   letter-spacing: -0.5%;
@@ -34,7 +34,7 @@
   }
 }
 
-.facts__list {
+.facts ol {
   display: flex;
   text-align: center;
   justify-content: space-between;

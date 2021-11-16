@@ -1,5 +1,6 @@
 'use strict';
 
+const pageMain = document.querySelector('.page-main');
 const pageHeaderNav = document.querySelector('.page-header__nav');
 const pageHeaderLogo = pageHeaderNav.querySelector('.page-header__logo');
 const pageHeaderBtn = pageHeaderNav.querySelector('.page-header__btn');

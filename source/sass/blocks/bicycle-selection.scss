@@ -17,7 +17,7 @@
   }
 }
 
-.bicycle-selection__title {
+.bicycle-selection h2 {
   font-size: 30px;
   line-height: 30px;
   font-weight: 600;
@@ -39,7 +39,7 @@
   }
 }
 
-.bicycle-selection__list {
+.bicycle-selection ul {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, max-content));
   justify-content: center;
@@ -78,7 +78,7 @@
   }
 }
 
-.bicycle-selection__item {
+.bicycle-selection li {
   @media (max-width: $max-tablet) {
     padding-left: 25px;
     padding-right: 25px;
@@ -90,7 +90,7 @@
   }
 }
 
-.bicycle-selection__item h3 {
+.bicycle-selection h3 {
   margin-top: 22px;
   margin-bottom: 0;
   font-weight: 600;
