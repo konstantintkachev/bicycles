@@ -52,11 +52,11 @@
   padding-top: 32px;
   box-sizing: border-box;
   position: relative;
+  flex-wrap: wrap;
 
   @media (max-width: $max-tablet) {
     padding-top: 0;
     display: flex;
-    flex-wrap: wrap;
     grid-gap: unset;
     padding-left: 37px;
     padding-right: 37px;
@@ -67,6 +67,7 @@
   @media (max-width: $max-mobile) {
     padding-left: 25px;
     padding-right: 25px;
+    display: block;
   }
 }
 
@@ -79,6 +80,7 @@
 }
 
 .bicycle-selection li {
+  width: fit-content;
   @media (max-width: $max-tablet) {
     padding-left: 25px;
     padding-right: 25px;
@@ -87,6 +89,8 @@
   @media (max-width: $max-mobile) {
     padding-left: 0;
     padding-right: 0;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 

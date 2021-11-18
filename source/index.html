@@ -18,7 +18,7 @@
     <header class="page-header">
       <nav class="page-header__nav page-header__nav--no-js">
         <div class="page-header__container">
-          <a class="page-header__logo page-header__logo--no-js" href="#">
+          <a class="page-header__logo page-header__logo--no-js">
             <svg
               width="68"
               height="21"
@@ -102,6 +102,7 @@
                 name="name"
                 id="name"
                 placeholder="Введите Ваше Имя"
+                required
               />
               <label class="visually-hidden" for="tel">Ваш телефон</label>
               <input
@@ -109,6 +110,8 @@
                 id="tel"
                 type="number"
                 placeholder="Введите Ваш номер телефона"
+                required
+                pattern="\d[0-9]"
               />
               <button type="submit">Подобрать велосипед мечты</button>
             </form>

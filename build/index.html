@@ -12,7 +12,7 @@
     <header class="page-header">
       <nav class="page-header__nav page-header__nav--no-js">
         <div class="page-header__container">
-          <a class="page-header__logo page-header__logo--no-js" href="#">
+          <a class="page-header__logo page-header__logo--no-js">
             <svg width="68" height="21" viewBox="0 0 68 21" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M13.3636 0V20.0455H10.0705V5.82273L8.97273 7.20682L6.825 9.975L6.72954 10.0705L6.58636 9.975L4.43864 7.20682L3.34091 5.775V20.0455H0V0H3.34091L6.72954 4.29545L10.0705 0H13.3636Z" fill="#0AD9C6"></path>
               <path d="M8.30444 10.0704L8.20898 9.97498L8.30444 10.0704Z" fill="#0AD9C6"></path>
@@ -61,9 +61,9 @@
             <p>Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
             <form action="https://echo.htmlacademy.ru" method="post">
               <label class="visually-hidden" for="name">Ваше имя</label>
-              <input type="text" name="name" id="name" placeholder="Введите Ваше Имя">
+              <input type="text" name="name" id="name" placeholder="Введите Ваше Имя" required="">
               <label class="visually-hidden" for="tel">Ваш телефон</label>
-              <input name="tel" id="tel" type="number" placeholder="Введите Ваш номер телефона">
+              <input name="tel" id="tel" type="number" placeholder="Введите Ваш номер телефона" required="" pattern="\d[0-9]">
               <button type="submit">Подобрать велосипед мечты</button>
             </form>
           </div>

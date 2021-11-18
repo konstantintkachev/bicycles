@@ -6,7 +6,7 @@
   background-position: center;
   color: $basic-white;
   margin-bottom: 100px;
-  background-size: 1440px 825px;
+  background-size: 100% 100%;
 
   @media (max-width: $max-tablet) {
     margin-bottom: 30px;
@@ -179,6 +179,17 @@
   @media (max-width: $max-mobile) {
     padding: 11px 22px 11px 24px;
   }
+
+  &:hover {
+    border-color: $basic-turquoise;
+  }
+
+  &:active,
+  &:focus {
+    outline: none;
+    border-width: 3px;
+    border-color: $basic-turquoise;
+  }
 }
 
 .main-offer__container-form button {
@@ -199,5 +210,14 @@
 
   @media (max-width: $max-mobile) {
     padding-top: 12px;
+  }
+
+  &:hover {
+    background-color: darken($basic-turquoise, 10);
+  }
+
+  &:active,
+  &:focus {
+    background-color: darken($basic-turquoise, 20);
   }
 }

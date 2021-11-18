@@ -15,7 +15,7 @@
     display: block;
     padding-top: 0;
     width: 100%;
-    min-height: auto;
+    min-height: 100%;
   }
 }
 
@@ -129,6 +129,8 @@
   @media (max-width: $max-tablet) {
     min-height: 100vh;
     background-color: $basic-white;
+    position: fixed;
+    overflow: hidden;
   }
 }
 
