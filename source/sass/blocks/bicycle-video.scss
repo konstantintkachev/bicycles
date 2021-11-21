@@ -79,7 +79,7 @@
 
 .bicycle-video__img {
   position: relative;
-  width: max-content;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: -118px;
@@ -88,19 +88,17 @@
 .bicycle-video__img img {
   display: block;
   border-style: none;
-  max-width: 100%;
-  height: auto;
+  width: 929px;
+  height: 100%;
   margin: 0 auto;
 
   @media (max-width: $max-tablet) {
-    width: 503px;
-    height: 282px;
     object-fit: cover;
+    padding: 0 132px;
   }
 
   @media (max-width: $max-mobile) {
-    height: 162px;
-    width: 288px;
+    padding: 0 16px;
   }
 }
 

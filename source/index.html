@@ -60,6 +60,7 @@
           <button
             class="page-header__btn page-header__btn--no-js"
             type="button"
+            aria-label="Кнопка открыть меню"
           >
             <span class="visually-hidden">Открыть меню</span>
           </button>
@@ -67,16 +68,24 @@
         <div class="main-nav main-nav--no-js">
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a href="#about">О нас</a>
+              <a href="#about" aria-label="Перейти в раздел О нас">О нас</a>
             </li>
             <li class="main-nav__item">
-              <a href="#types">Виды велосипедов</a>
+              <a href="#types" aria-label="Перейти в раздел Виды велосипедов"
+                >Виды велосипедов</a
+              >
             </li>
             <li class="main-nav__item">
-              <a href="#video">Видео про велосипеды</a>
+              <a
+                href="#video"
+                aria-label="Перейти в раздел Видео про велосипеды"
+                >Видео про велосипеды</a
+              >
             </li>
             <li class="main-nav__item">
-              <a href="#contacts">Контакты</a>
+              <a href="#contacts" aria-label="Перейти в раздел Контакты"
+                >Контакты</a
+              >
             </li>
           </ul>
         </div>
@@ -108,12 +117,14 @@
               <input
                 name="tel"
                 id="tel"
-                type="number"
+                type="text"
                 placeholder="Введите Ваш номер телефона"
                 required
-                pattern="\d[0-9]"
+                pattern="[0-9]{6,11}"
               />
-              <button type="submit">Подобрать велосипед мечты</button>
+              <button type="submit" aria-label="Кнопка подобрать велосипед">
+                Подобрать велосипед мечты
+              </button>
             </form>
           </div>
         </div>
@@ -139,7 +150,7 @@
         <h2>Виды велосипедов</h2>
         <ul>
           <li>
-            <a href="#">
+            <a href="#" aria-label="Выбрать городской велосипед">
               <div
                 class="
                   bicycle-selection__wrapper bicycle-selection__wrapper--city
@@ -164,7 +175,7 @@
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="#" aria-label="Выбрать горный велосипед">
               <div
                 class="
                   bicycle-selection__wrapper
@@ -193,7 +204,7 @@
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="#" aria-label="Выбрать детский велосипед">
               <div
                 class="
                   bicycle-selection__wrapper bicycle-selection__wrapper--kids
@@ -228,7 +239,7 @@
             для себя.
           </p>
           <div class="bicycle-video__img">
-            <a href="#">
+            <a href="#" aria-label="Воспроизвести видео">
               <picture>
                 <source
                   type="image/webp"
@@ -283,6 +294,7 @@
             style="border: 0"
             allowfullscreen=""
             loading="lazy"
+            name="video"
           ></iframe>
         </div>
       </section>
